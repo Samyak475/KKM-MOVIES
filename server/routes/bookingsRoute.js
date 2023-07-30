@@ -14,7 +14,7 @@ router.post("/make-payment", authMiddleware, async (req, res) => {
       source: token.id,
     });
 
-    const charge = await stripe.charges.create({
+    const charge = await stripe.paymentIntents.create({
       amount: amount,
       currency: "usd",
       customer: customer.id,
