@@ -48,7 +48,7 @@ function ProtectedRoute({ children }) {
               className="text-2xl text-white cursor-pointer"
               onClick={() => navigate("/")}
             >
-              SHEYMOVIES
+              KKM - MOVIES
             </h1>
           </div>
 
